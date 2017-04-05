@@ -46,11 +46,6 @@
 	<bean class="practice.annotation.BeanFactoryPostProcess">
 	</bean>
 
-	<!-- @Required practice -->
-	<bean id="circle" class="practice.annotation.Circle">
-		<!-- Comment this line, you will see an exception thrown ty RequiredAnnotationBeanPostProcessor -->
-		<property name="center" ref="point3"/>
-	</bean>
 	
 	<!-- Check for all the @Required annotation in the package. -->
 	<!--
@@ -60,5 +55,6 @@
 		We also have to make sure the properties of <beans> to refer spring conext schema is set.
 	-->
 	<context:annotation-config/>
+	<context:component-scan base-package="practice.annotation" />
 
 </beans>

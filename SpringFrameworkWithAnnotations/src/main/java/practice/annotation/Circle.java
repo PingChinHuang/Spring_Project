@@ -4,11 +4,13 @@
 package practice.annotation;
 
 import org.springframework.beans.factory.annotation.Required;
+import org.springframework.stereotype.Component;
 
 /**
  * @author superod
  *
  */
+@Component
 public class Circle implements Shape {
 	private String name;
 	private Point center;
@@ -25,7 +27,7 @@ public class Circle implements Shape {
 		return center;
 	}
 
-	@Required
+	//@Required
 	public void setCenter(Point center) {
 		this.center = center;
 	}
