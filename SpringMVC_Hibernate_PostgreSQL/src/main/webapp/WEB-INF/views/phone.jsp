@@ -12,7 +12,7 @@
 </head>
 <body>
 <h1>Add a Phone</h1>
-<c:url var="addAction" value="/phone/add" ></c:url>
+<c:url var="addAction" value="/phones/add" ></c:url>
 <form:form action="${addAction}" commandName="phone">
 <table>
 	<c:if test="${!empty phone.name}">
@@ -68,7 +68,7 @@
 		<tr>
 			<th width="80">ID</th>
 			<th width="120">Phone Name</th>
-			<th width="120">Review></th>
+			<th width="120">Review</th>
 			<th width="120">Action</th>
 		</tr>
 		<c:forEach items="${listPhones}" var="phone">
