@@ -9,6 +9,7 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Repository;
 
 import com.demo.spring.model.Phone;
 
@@ -16,6 +17,7 @@ import com.demo.spring.model.Phone;
  * @author superod
  *
  */
+@Repository
 public class PhoneDAOImpl implements PhoneDAO {
 	
 	private static final Logger logger = LoggerFactory.getLogger(PhoneDAOImpl.class);

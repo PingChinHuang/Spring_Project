@@ -48,14 +48,17 @@ public class PhoneServiceImpl implements PhoneService {
 		this.phoneDAO.updatePhone(p);
 	}
 
+	@Transactional
 	public List<Phone> listPhones() {
 		return this.phoneDAO.listPhones();
 	}
 
+	@Transactional
 	public Phone getPhoneById(int id) {
 		return this.phoneDAO.getPhoneById(id);
 	}
 
+	@Transactional
 	public void removePhone(int id) {
 		this.phoneDAO.removePhone(id);
 	}

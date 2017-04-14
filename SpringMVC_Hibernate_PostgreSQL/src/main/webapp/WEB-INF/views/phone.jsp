@@ -40,7 +40,9 @@
 	</tr>
 	<tr>
 		<td>
-			<form:label path="review" />
+			<form:label path="review">
+				<spring:message text="Review" />
+			</form:label>
 		</td>
 		<td>
 			<form:input path="review" />
